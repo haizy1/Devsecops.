@@ -1,0 +1,366 @@
+/* Style for the toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Disabled color */
+  transition: background-color 0.4s ease;
+  border-radius: 50px; /* Rounded for modern look */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  left: 4px;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: left 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #2196F3; /* Active color */
+}
+
+input:checked + .slider:before {
+  left: 26px; /* Position to the right */
+}
+
+/* Main container for Annonce Details */
+.annonce-detail-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.annonce-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.annonce-title {
+  font-size: 32px;
+  color: #333;
+  flex: 1;
+}
+
+.annonce-price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2196F3;
+}
+
+/* Image Section */
+.annonce-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.placeholder-image {
+  font-size: 18px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Description Section */
+.annonce-description {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Info Section */
+.annonce-info {
+  margin-top: 20px;
+}
+
+.annonce-info-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.annonce-info-column {
+  width: 23%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.annonce-info-column .icon {
+  font-size: 24px;
+  color: #2196F3;
+  margin-bottom: 8px;
+}
+
+.annonce-info-column p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Button Section */
+.annonce-interested-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.interested-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.interested-button:hover {
+  background-color: #1e88e5;
+}
+
+/* Error message */
+.error {
+  color: #e53935;
+  font-size: 12px;
+  margin-top: -8px;
+}
+
+/* Style for Tags (Equipements and other selections) */
+.selected-tag {
+  background-color: #0cc0df; /* Blue color for tags */
+  color: white;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px;
+  display: inline-block;
+}
+
+/* Adjust padding for multiple items (equipements) */
+.selected-tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between tags */
+  margin-top: 10px;
+}
+
+.selected-tag:hover {
+  background-color: #009cb3; /* Darker blue for hover effect */
+}
+/* Style for the submit button */
+.submit-btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #009cb3; /* Set the color to #009cb3 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #008c99; /* Slightly darker shade for hover effect */
+}
+
+/* Style for the toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Disabled color */
+  transition: background-color 0.4s ease;
+  border-radius: 50px; /* Rounded for modern look */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: white;
+  left: 4px;
+  bottom: 50%;
+  transform: translateY(50%);
+  transition: left 0.4s ease;
+}
+
+input:checked + .slider {
+  background-color: #009cb3; /* Match toggle color with submit button */
+}
+
+input:checked + .slider:before {
+  left: 26px; /* Position to the right */
+}
+/* Style for the Meublé and Eau et Electricité buttons */
+input-group button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #009cb3; /* Set the color to #009cb3 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Space between buttons */
+}
+
+input-group button:hover {
+  background-color: #008c99; /* Slightly darker shade on hover */
+}
+
+/* Specific hover color for buttons related to Meublé and Eau et Electricité */
+input-group button:focus {
+  outline: none;
+}
+
+input-group button.meuble {
+  background-color: #009cb3; /* Set for Meublé toggle */
+}
+
+input-group button.eau-et-electricite {
+  background-color: #009cb3; /* Set for Eau et Electricité toggle */
+}
+
+input-group button.meuble:hover {
+  background-color: #008c99;
+}
+
+input-group button.eau-et-electricite:hover {
+  background-color: #008c99;
+}
+/* Style for the container of tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;  /* Allow tags to wrap if needed */
+  gap: 10px;  /* Add space between the tags */
+  margin-top: 10px; /* Add some space at the top */
+}
+
+/* Style for each individual tag */
+.tag {
+  background-color: #009cb3; /* Blue background color */
+  color: white; /* White text color */
+  padding: 5px 15px; /* Padding inside each tag (vertical, horizontal) */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 14px; /* Font size for the tag text */
+  display: inline-block; /* Ensure tags are displayed inline */
+}
+
+/* Style for the buttons */
+button {
+  background-color: #009cb3; /* Blue background */
+  color: white; /* White text */
+  border: none; /* Removes the border */
+  padding: 8px 16px; /* Adds padding inside the button */
+  font-size: 14px; /* Adjusts the text size */
+  border-radius: 4px; /* Rounds the corners */
+  cursor: pointer; /* Indicates the button is clickable */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions for hover effect */
+  margin-top: 5px; /* Optional: Adds some space above the button */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #008c99; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Active state for buttons */
+button:active {
+  background-color: #007b8c; /* Even darker blue when clicked */
+}
+/* Style for the Meublé and Eau et Electricité buttons inside the input-group */
+.input-group button {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #009cb3; /* Set the blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Space between the buttons */
+}
+
+/* Hover effect for Meublé and Eau et Electricité buttons */
+.input-group button:hover {
+  background-color: #008c99; /* Darker blue on hover */
+}
+
+/* Focus state for Meublé and Eau et Electricité buttons */
+.input-group button:focus {
+  outline: none; /* Remove the default outline on focus */
+}
+
+/* Specific styles for Meublé button */
+.input-group button[name="meuble"] {
+  background-color: #009cb3; /* Blue color for Meublé */
+}
+
+.input-group button[name="meuble"]:hover {
+  background-color: #008c99; /* Darker blue for hover */
+}
+
+/* Specific styles for Eau et Electricité button */
+.input-group button[name="eauEtElectriciteInclus"] {
+  background-color: #009cb3; /* Blue color for Eau et Electricité */
+}
+
+.input-group button[name="eauEtElectriciteInclus"]:hover {
+  background-color: #008c99; /* Darker blue for hover */
+}
+h2 {
+  text-align: center;
+  color: #0cc0df; /* Change this color code as per your preference */
+  font-size: 2rem;
+  margin-bottom: 20px;
+}

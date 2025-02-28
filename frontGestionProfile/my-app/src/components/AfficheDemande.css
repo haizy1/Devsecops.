@@ -1,0 +1,89 @@
+
+  /* Minimalist Styles */
+.demande-container {
+  font-family: 'Inter', sans-serif;
+  max-width: 800px;
+  margin: 120px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.demande-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  flex: 1 1 calc(33.333% - 40px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item .icon {
+  font-size: 1.5rem;
+  color: #0cc0df;
+  margin-bottom: 10px;
+}
+
+.grid-item .label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.grid-item .value {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.matching-score {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.matching-score .label {
+  font-weight: 500;
+}
+
+.matching-score .value {
+  font-weight: 600;
+  color: #0cc0df;
+}
+
+/* Loading and Error States */
+.loading, .error, .no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 50px;
+}
+/* Section Title Styles */
+.section-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+}
+

@@ -1,0 +1,107 @@
+/* Styles généraux */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Conteneur principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #6c63ff; /* Violet doux */
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  /* Section principale */
+  .main {
+    width: 90%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Formulaire */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espacement uniforme entre les champs */
+  }
+  
+  form label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: #555;
+  }
+  
+  form input,
+  form select,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  form input:focus,
+  form select:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #6c63ff;
+    background-color: #fff;
+  }
+  
+  /* Bouton */
+  form button {
+    background-color: #6c63ff;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  form button:hover {
+    background-color: #5751d1;
+  }
+  
+  /* Responsivité */
+  @media (max-width: 768px) {
+    .main {
+      padding: 15px;
+    }
+  
+    .header h1 {
+      font-size: 20px;
+    }
+  }
+  

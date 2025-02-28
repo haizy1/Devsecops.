@@ -1,0 +1,186 @@
+/* Global */
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 10px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+  padding: 20px;
+}
+
+/* Card Container */
+.user-profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header Section (Profile Image + Name) */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #4f46e5;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.profile-info h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.profile-info .age {
+  font-size: 1.2rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+.profile-info .verified {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #10b981;
+  margin-top: 0.5rem;
+}
+
+.profile-info .verified i {
+  color: #10b981;
+}
+
+/* Information Section (Card with Boxes) */
+.section {
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 1rem;
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.info-item .label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.info-item .value {
+  color: #6b7280;
+}
+
+.badges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #e5e7eb;
+  color: #374151;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.age-badge {
+  background: #4f46e5;
+  color: #fff;
+  padding: 0.3rem 0.75rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Action Buttons */
+.profile-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.profile-actions .action-button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-actions .action-button.edit {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.profile-actions .action-button.edit:hover {
+  background-color: #2b36e2;
+}
+
+.profile-actions .action-button.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.profile-actions .action-button.delete:hover {
+  background-color: #dc2626;
+}
+
+/* Responsive Layout for Small Screens */
+@media screen and (max-width: 768px) {
+  .info-list {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-img {
+    margin-bottom: 1rem;
+  }
+}

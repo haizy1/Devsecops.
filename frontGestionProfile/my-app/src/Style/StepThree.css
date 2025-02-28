@@ -1,0 +1,44 @@
+.step-three-container {
+    margin-top: 20px;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .tag-chip {
+    margin: 4px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tag-chip.selected {
+    background-color: #0cc0df;
+    color: white;
+  }
+  
+  .tag-chip.unselected {
+    background-color: #f0f0f0;
+    color: #555;
+  }
+  
+  .tag-chip.selected:hover {
+    background-color: #008bb7;
+  }
+  
+  .tag-chip.unselected:hover {
+    background-color: #e0e0e0;
+  }
+  
+  h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+  }
